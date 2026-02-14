@@ -41,59 +41,158 @@
         <!-- Protected Content -->
         <div id="protectedContent" class="protected-content">
             <div class="hero">
-                <h1>🎓 Class 3 Resources</h1>
+                <h1>🎓 Class 3 - English & Maths</h1>
                 <p>Welcome to your class materials and assignments</p>
             </div>
 
+            <!-- 1. DOCUMENT UPLOAD SECTION -->
             <div class="content-section">
-                <h2>Current Assignments</h2>
-                <p>Check here regularly for homework and project updates.</p>
+                <h2>📤 Submit Your Work</h2>
+                <p>Upload completed assignments here. Accepted formats: PDF, DOCX, DOC</p>
+                
+                <div style="background-color: var(--bg-light); padding: 2rem; border-radius: 0.5rem; margin-top: 1rem;">
+                    <form id="uploadForm" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <label for="studentName" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name:</label>
+                            <input type="text" id="studentName" required 
+                                   style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); border-radius: 0.5rem;">
+                        </div>
+                        
+                        <div>
+                            <label for="assignmentSelect" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Assignment:</label>
+                            <select id="assignmentSelect" required 
+                                    style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); border-radius: 0.5rem;">
+                                <option value="">Select an assignment...</option>
+                                <option value="assignment1">Assignment 1: Reading Analysis</option>
+                                <option value="assignment2">Assignment 2: Writing Task</option>
+                                <option value="assignment3">Assignment 3: Maths Problem Set</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="fileUpload" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Choose File:</label>
+                            <input type="file" id="fileUpload" accept=".pdf,.doc,.docx" required
+                                   style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); border-radius: 0.5rem;">
+                        </div>
+                        
+                        <button type="submit" class="btn">Upload Assignment</button>
+                        <p id="uploadStatus" style="display: none; padding: 1rem; border-radius: 0.5rem; margin-top: 0.5rem;"></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 2. ANNOUNCEMENTS -->
+            <div class="content-section">
+                <h2>📢 Announcements</h2>
+                <div style="background-color: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem; margin-bottom: 1rem; border-radius: 0.25rem;">
+                    <p style="margin: 0;"><strong>Latest Update (Feb 14, 2026):</strong> Welcome to Class 3! Check back here regularly for important announcements and updates throughout the term.</p>
+                </div>
+                
+                <div style="background-color: var(--bg-light); padding: 1rem; margin-bottom: 1rem; border-radius: 0.25rem;">
+                    <p style="margin: 0;"><strong>Reminder:</strong> All assignments must be submitted by 11:59 PM on the due date.</p>
+                </div>
+            </div>
+
+            <!-- 3. ASSIGNMENTS -->
+            <div class="content-section">
+                <h2>📝 Current Assignments</h2>
+                <p>Download assignment instructions and submit your completed work above.</p>
                 
                 <div class="download-list">
                     <div class="download-item">
                         <div class="download-info">
                             <h4>Assignment 1: Reading Analysis</h4>
-                            <p>Due: [Add date] • Format: PDF</p>
+                            <p><strong>Due: [Add date]</strong> • Format: PDF or DOCX • Subject: English</p>
                         </div>
-                        <a href="#" class="download-btn">Download</a>
+                        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO/raw/main/assignments/class3-assignment1.pdf" class="download-btn">Download</a>
                     </div>
                     
                     <div class="download-item">
                         <div class="download-info">
                             <h4>Assignment 2: Writing Task</h4>
-                            <p>Due: [Add date] • Format: DOCX</p>
+                            <p><strong>Due: [Add date]</strong> • Format: PDF or DOCX • Subject: English</p>
                         </div>
-                        <a href="#" class="download-btn">Download</a>
+                        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO/raw/main/assignments/class3-assignment2.pdf" class="download-btn">Download</a>
+                    </div>
+                    
+                    <div class="download-item">
+                        <div class="download-info">
+                            <h4>Assignment 3: Maths Problem Set</h4>
+                            <p><strong>Due: [Add date]</strong> • Format: PDF or DOCX • Subject: Maths</p>
+                        </div>
+                        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO/raw/main/assignments/class3-assignment3.pdf" class="download-btn">Download</a>
                     </div>
                 </div>
             </div>
 
+            <!-- 4. RESOURCES -->
             <div class="content-section">
-                <h2>Class Materials</h2>
+                <h2>📚 Class Resources</h2>
                 <p>Access lesson notes, worksheets, and study guides.</p>
                 
                 <div class="download-list">
                     <div class="download-item">
                         <div class="download-info">
-                            <h4>Week 1-2 Study Guide</h4>
-                            <p>Topic: Introduction • Format: PDF</p>
+                            <h4>English Study Guide</h4>
+                            <p>Reading comprehension and writing techniques • Format: PDF</p>
                         </div>
-                        <a href="#" class="download-btn">Download</a>
+                        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO/raw/main/resources/english-guide.pdf" class="download-btn">Download</a>
                     </div>
                     
                     <div class="download-item">
                         <div class="download-info">
-                            <h4>Practice Worksheets</h4>
-                            <p>Collection of exercises • Format: ZIP</p>
+                            <h4>Maths Practice Worksheets</h4>
+                            <p>Collection of exercises with answer keys • Format: PDF</p>
                         </div>
-                        <a href="#" class="download-btn">Download</a>
+                        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO/raw/main/resources/maths-worksheets.pdf" class="download-btn">Download</a>
+                    </div>
+                    
+                    <div class="download-item">
+                        <div class="download-info">
+                            <h4>Grammar Reference Guide</h4>
+                            <p>Quick reference for common grammar rules • Format: PDF</p>
+                        </div>
+                        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO/raw/main/resources/grammar-guide.pdf" class="download-btn">Download</a>
                     </div>
                 </div>
             </div>
 
+            <!-- QUICK LINKS TO EXTERNAL PLATFORMS -->
             <div class="content-section">
-                <h2>Announcements</h2>
-                <p><strong>Latest Update:</strong> Welcome to Class 3! Check back here for important announcements and updates throughout the term.</p>
+                <h2>🔗 Practice & Learning Tools</h2>
+                <p>Click the links below to access online learning platforms.</p>
+                
+                <ul class="links-list">
+                    <li class="link-item">
+                        <a href="https://www.noredink.com" target="_blank">
+                            <div class="link-info">
+                                <h4>NoRedInk</h4>
+                                <p>Grammar and writing practice</p>
+                            </div>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </li>
+                    
+                    <li class="link-item">
+                        <a href="https://www.khanacademy.org/math" target="_blank">
+                            <div class="link-info">
+                                <h4>Khan Academy - Maths</h4>
+                                <p>Video lessons and practice exercises</p>
+                            </div>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </li>
+                    
+                    <li class="link-item">
+                        <a href="https://quizlet.com" target="_blank">
+                            <div class="link-info">
+                                <h4>Quizlet</h4>
+                                <p>Flashcards and study tools</p>
+                            </div>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
@@ -129,6 +228,30 @@
             document.getElementById('passwordSection').style.display = 'none';
             document.getElementById('protectedContent').classList.add('unlocked');
         }
+
+        // Firebase Upload Handler
+        document.getElementById('uploadForm')?.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const statusDiv = document.getElementById('uploadStatus');
+            statusDiv.style.display = 'block';
+            statusDiv.style.backgroundColor = '#dbeafe';
+            statusDiv.style.color = '#1e40af';
+            statusDiv.textContent = 'Uploading...';
+            
+            const studentName = document.getElementById('studentName').value;
+            const assignment = document.getElementById('assignmentSelect').value;
+            const file = document.getElementById('fileUpload').files[0];
+            
+            // Simulate upload (REPLACE with Firebase code - see FIREBASE-SETUP.md)
+            setTimeout(() => {
+                statusDiv.style.backgroundColor = '#d1fae5';
+                statusDiv.style.color = '#065f46';
+                statusDiv.textContent = '✓ Upload successful! Your assignment has been submitted.';
+                document.getElementById('uploadForm').reset();
+                setTimeout(() => { statusDiv.style.display = 'none'; }, 5000);
+            }, 1500);
+        });
     </script>
 </body>
 </html>
