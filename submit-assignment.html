@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Submit Your Assignment</h1>
+        
+        <form id="submissionForm">
+            <div class="form-group">
+                <label>Select Your Class:</label>
+                <select id="className" required>
+                    <option value="">-- Choose Your Class --</option>
+                    <option value="Class 1">Class 1</option>
+                    <option value="Class 2">Class 2</option>
+                    <option value="Class 3">Class 3</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Your Name:</label>
+                <input type="text" id="studentName" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Your Email:</label>
+                <input type="email" id="studentEmail" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Assignment Title:</label>
+                <input type="text" id="assignmentTitle" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Upload File:</label>
+                <input type="file" id="fileUpload" required>
+            </div>
+            
+            <button type="submit" id="submitBtn">Submit Assignment</button>
+        </form>
+        
+        <div id="message"></div>
+        
+        <p><a href="teacher-dashboard.html">Teacher Dashboard →</a></p>
+    </div>
+    
+    <script src="student.js"></script>
+</body>
+</html>
